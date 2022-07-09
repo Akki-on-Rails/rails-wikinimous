@@ -1,0 +1,7 @@
+<h1>WIKINIMOUS</h1>
+<h2><%= @article.title %></h2>
+<p><%= @article.content %></p>
+<p><%= link_to "Edit", edit_article_path %></p>
+<p><%= link_to "Delete", article_path(@article),
+        method: :delete, data: { confirm: "Really want to delete the article?" } %></p>
+<p><%= link_to "Index", articles_path %></p>
